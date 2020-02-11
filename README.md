@@ -1,0 +1,1 @@
+I'm a complete beginner with javascript, but this is my take on finding happy numbers with code. I try to find fun and small task, just to write as much code as  possible, hoping that will take me closer and closer to be able to use it for something useful. 
