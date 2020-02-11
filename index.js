@@ -3,6 +3,7 @@ let printZone = document.getElementById('paragraph')
 let submitButton = document.getElementById('submitButton')
 let initialNumberToBeTested = 0
 let temporaryNumberToBeTested = 0
+let refreshButton = document.getElementById('refresh')
 
 function kickIt () {
   chosenEnd = chosenEnd.value
@@ -37,11 +38,13 @@ function splitNumber (temporaryNumberToBeTested) {
 }
 
 function reset() {
-  printZone.innerText = ''
-  printZone.innerHTML = ''
+  window.location.reload(false)
 }
 
-submitButton.addEventListener('click', function () {
+refreshButton.addEventListener('click', function () {
   reset()
+})
+
+submitButton.addEventListener('click', function () {
   kickIt()
 })
